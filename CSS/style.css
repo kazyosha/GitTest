@@ -30,7 +30,47 @@
     background-color: #111;
 }
 .h1_login {
-    display: none;
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    color: blue;
 }
+.table1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.table1 table {
+    width: 100%;
+    border: 1px solid #1f3b63;
+}
+
+.table1 th, .table1 td {
+    border: 1px solid #cc2626;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.table1 th {
+    background-color: #3d7830;
+    font-weight: bold;
+}
+
+.table1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table1 tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+}
+
+.table1 td[colspan] {
+    font-weight: bold;
+    background-color: #e8f5f3;
+    text-align: left;
+}
+
