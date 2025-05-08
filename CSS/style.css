@@ -1,6 +1,36 @@
-.center-img {
+/*.center-img {*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    width: 300px;*/
+/*}*/
+/* Chỉ áp dụng cho danh sách có class .navbar */
+.navbar {
+    list-style-type: none;       /* bỏ dấu chấm */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;               /* hiển thị các mục ngang hàng */
+}
+
+.navbar li {
+    padding: 14px 16px;
+}
+
+.navbar li a {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+.h1_login {
+    display: none;
+    text-align: center;
+    color: blue;
 }
