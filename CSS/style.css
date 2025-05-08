@@ -73,5 +73,45 @@
     background-color: #e8f5f3;
     text-align: left;
 }
+body {
+    padding: 50px;
+}
+
+/* Chỉ áp dụng cho bảng thứ hai */
+table.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.custom-table td,
+table.custom-table th {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+table.custom-table th {
+    font-family: 'Patua One', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: #d61b06;
+    border-color: white;
+}
+
+table.custom-table td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 13px;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+table.custom-table tr:hover {
+    background: red; /* giả định bạn muốn hiệu ứng hover */
+}
 
 
