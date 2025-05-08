@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> simpleform</title>
+    <style>
+        /*.submit1{*/
+        /*    text-align: center;*/
+        /*    justify-content: center;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<form method="post" action="simpleform.html">
+  <h2> Order Form</h2>
+    <h4>What would you like to buy</h4>
+    <select>
+        <option value="caffe">Ca phe</option>
+        <option value="tea">Tra</option>
+        <option value="coca">Coca cola</option>
+        <option value="water">Aquafina</option>
+        <option value="mirinda">Mirinda</option>
+    </select>
+    <hr>
+    <h4>How many would you like to order?<br>(Danh cho Caffe va Tea)</h4>
+    <input type="radio" name="rd"/> Size nho 25k  <br>
+    <input type="radio" name="rd"/> Size vua 50k  <br>
+    <input type="radio" name="rd"/> Size lon 100k <br>
+    <hr>
+    <h4>NAME*</h4>
+    <input type="text" name="firstname" value="First Name"/> <br><br>
+    <input type="text" name="lastname" value="Last Name"/> <br> <br>
+    <input type="text" name="email" value="Email"/>
+    <hr>
+    <h4>Phone Number</h4>
+    <input type="text" name="phone1" value="" size="4">
+    <input type="text" name="phone2" value="" size="3">
+    <input type="text" name="phone3" value="" size="3"> <br> <br>
+    <div style="text-align: center;">
+        <input type="submit" name="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>

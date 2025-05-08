@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>favorite</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+    }
+
+    fieldset {
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    legend {
+      font-weight: bold;
+      color: #4CAF50;
+      padding: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 600px) {
+      fieldset {
+        padding: 15px;
+      }
+
+      input[type="text"], textarea {
+        font-size: 14px;
+      }
+
+      label {
+        font-size: 14px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="checkbox">
+  <fieldset>
+    <legend>So Thich</legend>
+    <form action="" >
+      <label><input type="checkbox" name="hobby" value="travel"> Du lich</label> <br >
+      <label><input type="checkbox" name="hobby" value="sport">Spots</label> <br>
+      <label><input type="checkbox" name="hobby" value="music">Am Nhac</label>
+    </form>
+  </fieldset>
+</div>
+<hr>
+<div class="radio">
+  <fieldset>
+    <legend>So Thich</legend>
+    <form action=""  method="POST">
+      Account: <input type="text" name="account"><br>
+      <label><input type="radio" name="hobby" value="travel"> Du lich</label> <br >
+      <label><input type="radio" name="hobby" value="sport">Spots</label> <br>
+      <label><input type="radio" name="hobby" value="music">Am Nhac</label> <br>
+      <input type="reset" value="Reset">
+    </form>
+  </fieldset>
+  <hr>
+</div>
+  <div class="reset">
+    <fieldset>
+      <legend>Hay noi ve toi</legend>
+      <form action=""  method="POST">
+        <textarea cols="100" rows="4">Hay noi 1 thu ve toi</textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </fieldset>
+  </div>
+</body>
+</html>
