@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+  <style>
+    .product-checkbox{
+      margin: 5px 0;
+      display: block;
+    }
+    .price-input{
+      /*display: inline-block;*/
+    }
+    .price-input input {
+      width: 60px;
+      /*padding: 5px;*/
+      /*margin-right: 5px;*/
+    }
+    .price-money {
+      padding-left: 20px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+      font-size: 14px;
+    }
+    .terabox textarea{
+      width: 1000px;
+      height: 100px;
+    }
+    table{
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+<form>
+<div>
+  <h1 style="margin-bottom: 0px">Market research survey</h1>
+  <p style="margin-top: 10px">Lam on hoan thanh bieu mau sau.</p>
+</div>
+<div>
+  <h3>What is your age range?</h3>
+  <select style="width: 200px">
+    <option value="1">18-24 Tuoi</option>
+    <option value="2">24-30 Tuoi</option>
+    <option value="3">30-38 Tuoi</option>
+    <option value="4">38-45 Tuoi</option>
+    <option value="5"> >45 Tuoi</option>
+  </select>
+</div>
+<div class="gender" style="margin-top: -5px; margin-bottom: 5px">
+  <h3>What is your gender?</h3>
+  <input type="radio" name="gender"> Nam <br>
+  <input type="radio" name="gender"> Nu <br>
+  <input type="radio" name="gender"> Nonbinary <br>
+  <input type="radio" name="gender"> Other <br>
+  <input type="text" name="othertext">
+</div>
+<div class="product-checkbox">
+  <h3>Which of the following products have your purchased in the last 2 months. Please check all that apply.
+  </h3>
+  <input type="checkbox" name="products"> Product 1 <br>
+  <input type="checkbox" name="products"> Product 2 <br>
+  <input type="checkbox" name="products"> Product 3 <br>
+</div>
+<div>
+  <h3>How often would you use our new product?</h3>
+  <label>
+    <input type="radio" name="products">
+  </label> Daily <br>
+  <label>
+    <input type="radio" name="products">
+  </label> Weekly <br>
+  <label>
+    <input type="radio" name="products">
+  </label> Monthly <br>
+  <label>
+    <input type="radio" name="products">
+  </label> Yearly <br>
+</div>
+<div>
+  <h3>What would you pay for the new product?</h3>
+  <div class="price-input">
+    <label>$</label>
+    <label>
+      <input type="text" name="money">
+    </label>
+    .
+    <label>
+      <input type="text" name="cent">
+    </label> <br>
+    <div class="price-money">
+      <span>Dollar</span>
+      <span>Ceent</span>
+    </div>
+  </div>
+</div>
+<div class="terabox">
+  <h3>What features would you like to see in the new product.</h3>
+  <textarea name="features"></textarea>
+</div>
+  <div>
+   <h3>Please rate your level of aggreement with the fllowing statements </h3>
+    <table border="1">
+      <tr style="background-color: lightblue">
+        <td></td>
+        <th>Hai long</th>
+        <th>Binh thuong</th>
+        <th>Ko hai long</th>
+      </tr>
+      <tr>
+        <td>bla bla bla</td>
+        <td><input type="radio" name="bla">1</td>
+        <td><input type="radio" name="bla">2</td>
+        <td><input type="radio" name="bla">3</td>
+      </tr>
+      <tr>
+        <td>abcawwfwa</td>
+        <td><input type="radio" name="bla">1</td>
+        <td><input type="radio" name="bla">2</td>
+        <td><input type="radio" name="bla">3</td>
+      </tr>
+      <tr>
+        <td>tatwaaaawgwagw</td>
+        <td><input type="radio" name="bla">1</td>
+        <td><input type="radio" name="bla">2</td>
+        <td><input type="radio" name="bla">3</td>
+      </tr>
+      <tr>
+        <td>tthrawhwat</td>
+        <td><input type="radio" name="bla">1</td>
+        <td><input type="radio" name="bla">2</td>
+        <td><input type="radio" name="bla">3</td>
+      </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>

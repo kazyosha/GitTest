@@ -113,5 +113,8 @@ table.custom-table td {
 table.custom-table tr:hover {
     background: red; /* giả định bạn muốn hiệu ứng hover */
 }
+/*.gender{*/
+/*    margin-bottom: -10px;*/
+/*}*/
 
 

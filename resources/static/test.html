@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Minh họa CSS Position</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            height: 2000px; /* để có thể cuộn trang */
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        .static {
+            background-color: gray;
+            position: static;
+        }
+
+        .relative {
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+
+        .container {
+            position: relative;
+            background-color: #f0f0f0;
+            padding: 50px;
+        }
+
+        .absolute {
+            background-color: green;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .fixed {
+            background-color: red;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .sticky-header {
+            background-color: orange;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sticky-header">🔶 Sticky Header (dính khi cuộn)</div>
+
+<div class="box static">🔹 Static</div>
+
+<div class="box relative">🔷 Relative (dịch 20px top, 30px left)</div>
+
+<div class="container">
+    <div class="box absolute">🟩 Absolute (trong container)</div>
+</div>
+
+<div class="box fixed">🟥 Fixed (cố định góc dưới phải)</div>
+
+<div class="content">
+    <p>Cuộn xuống để thấy vị trí của Fixed và Sticky hoạt động.</p>
+    <p>Sticky header sẽ giữ lại ở trên đầu khi bạn cuộn.</p>
+    <p>Fixed box ở dưới góc phải không di chuyển khi bạn cuộn.</p>
+    <p>Absolute nằm ở góc phải trên của container (container có position: relative).</p>
+    <p>Relative di chuyển so với chính vị trí ban đầu của nó.</p>
+</div>
+
+</body>
+</html>

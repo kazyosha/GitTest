@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Favorite</title>
+    <style>
+        .login{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .login label{
+            width: 120px;
+            font-weight: bold;
+            color: #1f51bd;
+        }
+        .login input{
+            width: 200px;
+        }
+        .btnlogin{
+    text-align: center;
+        }
+        .checkfavorite label{
+            color: #1f51bd;
+            margin-left: 5px;
+        }
+        .checkfavorite input{
+            margin-right: 5px;
+            color: #4CAF50;
+        }
+        .hobby-title{
+            text-align: center;
+            color: white;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<h1 class="hobby-title">So thich Cua ban</h1>
+<form method="post" action="http://localhost:8080/formfavorite">
+    <div class="login">
+        <label style="margin-left: 5px">Họ và tên:</label>
+        <label>
+            <input type="text" name="uname" value="Username">
+        </label> <br> <br>
+    </div>
+    <div  class="login">
+        <label style="margin-left: 5px">Email: </label>
+        <label>
+            <input type="email" name="email">
+        </label>
+    </div>
+
+    <div style="width: 300px" class="checkfavorite">
+
+        <label>
+            <input type="checkbox" name="check"> The thao
+        </label>
+        <label>
+            <input type="checkbox" name="check"> Du lich
+        </label>
+        <label>
+            <input type="checkbox" name="check"> Am nhac
+        </label><br>
+        <label>
+            <input type="checkbox" name="check"> Doc Sach
+        </label>
+        <label>
+            <input type="checkbox" name="check">Luot web
+        </label> <br>
+        <label>
+            <input type="checkbox" name="check">Choi Game
+        </label>
+    </div>
+    <div class = "btnlogin">
+        <button type="submit" name="submit">Gui Thong Tin</button>
+        <button type="reset" name="reset">Try Again</button>
+    </div>
+</form>
+
+</body>
+</html>
