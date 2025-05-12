@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #cc2626;
+        }
+        input{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        button{
+            text-align: center;
+            width: 50px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>May tinh don gian</h1>
+    <input type="text" id="textA" placeholder="nhap so thu nhat">
+    <input type="text" id="textB" placeholder="nhap so thu hai"> <br> <br>
+    Ket Qua: <br>
+    <p id="toTal"></p>
+    <hr>
+    <br>
+    <button onclick="funCong()"> + </button>
+    <button onclick="funTru()"> - </button>
+    <button onclick="funNhan()"> x </button>
+    <button onclick="funChia"> / </button>
+
+<script>
+    function funCong() {
+        let numA = +document.getElementById('textA').value;
+        let numB = +document.getElementById('textB').value;
+        let add = numA + numB;
+        document.getElementById('toTal').innerHTML = '=' +" " + add;
+    }
+    function funTru() {
+        let numA = document.getElementById('textA').value;
+        let numB = document.getElementById('textB').value;
+        let tru = numA - numB;
+        document.getElementById('toTal').innerHTML = '=' +" " + tru
+    }
+    function funNhan() {
+        let numA = document.getElementById('textA').value;
+        let numB = document.getElementById('textB').value;
+        let nhan = numA * numB;
+        document.getElementById('toTal').innerHTML = '=' +" " + nhan;
+    }
+    function funChia() {
+        let numA = document.getElementById('textA').value;
+        let numB = document.getElementById('textB').value;
+        let chia = numA / numB;
+        document.getElementById('toTal').innerHTML = '=' +" " + chia;
+    }
+</script>
+</body>
+</html>
