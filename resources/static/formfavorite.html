@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Favorite</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <style>
         .login{
             display: flex;
@@ -32,6 +33,23 @@
             text-align: center;
             color: white;
             background-color: orange;
+        }
+        h1{
+            text-align: center;
+            background-color: #33ac98;
+            color: blue;
+        }
+        .diachi input{
+            height: 100px;
+        }
+        .gender input{
+            text-align: center;
+            margin-right: 10px;
+            margin-bottom:  10px;
+            margin-left:  50px;
+        }
+        .backgroudform2{
+            background: #dfe460;
         }
     </style>
 </head>
@@ -77,6 +95,36 @@
         <button type="reset" name="reset">Try Again</button>
     </div>
 </form>
-
+<br>
+<hr>
+<br>
+<h1>Đăng Ký Học Vien</h1>
+<form class="backgroudform2">
+    <div class="login">
+        <label style="margin-left: 5px">Họ và tên:</label>
+        <label>
+            <input type="text" name="uname" value="Username">
+        </label> <br> <br>
+    </div>
+    <div  class="login">
+        <label style="margin-left: 5px">Email: </label>
+        <label>
+            <input type="email" name="email">
+        </label>
+    </div>
+    <div class="login">
+        <label style="margin-left: 5px">Gioi Tinh:</label>
+    </div>
+    <label class="gender">
+        <input type="radio" name="gender" value="">Nam
+        <input type="radio" name="gender" value="">Nu
+    </label> <br> <br>
+    <div  class="login">
+        <label style="margin-left: 5px">Dia chi: </label>
+        <label class="diachi">
+            <input type="text" name="diachi">
+        </label>
+    </div>
+</form>
 </body>
 </html>

@@ -5,11 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<img id="img" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" style="width: 200px; height: 200px;">
+<button onclick="document.getElementById('img').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+<button onclick="document.getElementById('img').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off</button>
+<br>
+<hr>
+<br>
 a: <input type="number" id="a" value="">
 b: <input type="number" id="b" value="">
 <button onclick="result()">Click me</button>
-
-<button onclick=""></button>
 <p id="result"></p>
 <script>
     function result() {
