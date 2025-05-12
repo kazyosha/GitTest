@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap Do C: <input type="number" name="" id="celsius" value="Celsius">
+<button onclick="calculate()">=</button>
+<br>
+<p id="t"></p>
+<script>
+    function calculate() {
+        let c = document.getElementById('celsius').value;
+        let f = c*(9/5)+32;
+        document.getElementById('t').innerText = 'Ket Qua =' + f;
+    }
+</script>
+</body>
+</html>

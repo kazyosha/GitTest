@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dien tich hinh tron</title>
+</head>
+<body>
+Nhap duong kinh: <input type="text" name="" id="radius">
+<button onclick="dientich()"> Dien tich </button>
+<button onclick="chuvi()"> Chu vi</button>
+<p id="s"></p>
+<p id="c"></p>
+<script>
+    function dientich() {
+      let r = +document.getElementById('radius').value;
+      let s = Math.PI * r * r;
+      document.getElementById('s').innerHTML = 'Dien tich Pi * r * r =' + s;
+    }
+    function chuvi() {
+      let r = +document.getElementById('radius').value;
+      let c = 2 * Math.PI * r;
+      document.getElementById('c').innerHTML = 'Ket qua chu vi =' + c;
+    }
+</script>
+</body>
+</html>
