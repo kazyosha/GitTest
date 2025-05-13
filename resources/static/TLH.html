@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toan ly hoa</title>
+</head>
+<body>
+
+  VatLy: <input type="number" id="vatLy" name="vatLy" value="">
+  Toan: <input type="number" id="toan" name="toan" value="">
+  Hoa: <input type="number" id="hoa" name="hoa" value="">
+  <button onclick="result()"> = </button>
+  <p id="toTal"></p>
+
+
+
+
+
+
+<script>
+  function result() {
+    let v = +document.getElementById('vatLy').value;
+    let t = +document.getElementById('toan').value;
+    let h = +document.getElementById('hoa').value;
+    let tong = (v + t + h)/3;
+    document.getElementById('toTal').innerHTML = 'Ket qua =: ' + tong;
+  }
+</script>
+</body>
+</html>

@@ -7,4 +7,4 @@ inPutHeight = prompt("Vui long ghi chieu cao cua ban:");
 let width = parseInt(inPutWidth);
 let height = parseInt(inPutHeight);
 let area = width * height;
-document.write(area);
+document.write( 'Ket qua:' + " " + area );

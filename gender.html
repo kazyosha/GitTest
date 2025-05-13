@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gender</title>
+</head>
+<body>
+<h1>Kiem tra gioi tinh</h1>
+<select id="genDer">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+<button onclick="funGener()">Kiem tra</button>
+<p id="ketQua"></p>
+
+
+<script>
+    function funGener() {
+        let genDer = document.getElementById("genDer").value;
+
+        switch (genDer) {
+            case "male":
+                document.getElementById("ketQua").innerHTML = "Ket qua:"+ " " + genDer;
+                break;
+                case "female":
+                    document.getElementById("ketQua").innerHTML = "Ket qua:" +" " + genDer;
+                    break;
+                    default:
+                        document.getElementById("ketQua").innerHTML = "Undefined";
+        }
+    }
+</script>
+</body>
+</html>

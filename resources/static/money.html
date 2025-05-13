@@ -3,56 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Chuyen doi tien te</title>
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            background-color: #f0f2f5;-->
+<!--            padding: 40px;-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--        }-->
+
+<!--        .container {-->
+<!--            background-color: #fff;-->
+<!--            padding: 25px 30px;-->
+<!--            border-radius: 10px;-->
+<!--            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);-->
+<!--            max-width: 400px;-->
+<!--            width: 100%;-->
+<!--        }-->
+
+<!--        h1 {-->
+<!--            text-align: center;-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        label {-->
+<!--            font-weight: bold;-->
+<!--            color: #444;-->
+<!--        }-->
+
+<!--        input[type="number"],-->
+<!--        select {-->
+<!--            width: 100%;-->
+<!--            padding: 8px 12px;-->
+<!--            margin-top: 6px;-->
+<!--            margin-bottom: 16px;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 6px;-->
+<!--            font-size: 16px;-->
+<!--        }-->
+
+<!--        button {-->
+<!--            width: 100%;-->
+<!--            padding: 10px 15px;-->
+<!--            font-size: 16px;-->
+<!--            background-color: #007bff;-->
+<!--            color: white;-->
+<!--            border: none;-->
+<!--            border-radius: 6px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+
+<!--        button:hover {-->
+<!--            background-color: #0056b3;-->
+<!--        }-->
+
+<!--        #result {-->
+<!--            margin-top: 20px;-->
+<!--            font-size: 18px;-->
+<!--            color: #006400;-->
+<!--            font-weight: bold;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--    </style>-->
 </head>
 <body>
-<h1>Chuyen doi tien te</h1>
-<div>
-    <label>Amount</label> <br>
-    <input type="number" id="amount" value="1"> <br>
+<div class="container">
+    <h1>Chuyen doi tien te</h1>
+    <div>
+        <label>Amount</label> <br>
+        <input type="number" id="amount" value="1"> <br>
+    </div>
+    <div>
+        <label> From Currency</label> <br>
+        <select id="fromCurrency">
+            <option value="VND" id="fromVnd">VND</option>
+            <option value="USD" id="fromUsd">USD</option>
+        </select>
+    </div>
+    <div>
+        <label> To Currency</label> <br>
+        <select id="toCurrency">
+            <option value="VND" id="toVnd">VND</option>
+            <option value="USD" id="toUsd">USD</option>
+        </select>
+    </div>
+    <button onclick='changeConvert()'>Convert</button>
+    <p id="result"> Result: </p>
 </div>
-<br>
-<div>
-    <label> From Currency</label> <br>
-    <select id="fromCurrency">
-        <option value="VND" id="fromVnd">VND</option>
-        <option value="USD" id="fromUsd">USD</option>
-    </select>
-</div>
-<br>
-<div>
-    <label> To Currency</label> <br>
-    <select id="toCurrency">
-        <option value="VND" id="toVnd">VND</option>
-        <option value="USD" id="toUsd">USD</option>
-    </select>
-</div>
-<br>
-<button onclick='changeConvert()'>Convert</button>
-<br>
-<p id="result"> Result: </p>
+
 <script>
-    function  changeConvert() {
-    let amount = document.getElementById('amount').value;
-    let from = document.getElementById('fromCurrency').value;
-    let to = document.getElementById('toCurrency').value;
-    let result;
+    function changeConvert() {
+        let amount = document.getElementById('amount').value;
+        let from = document.getElementById('fromCurrency').value;
+        let to = document.getElementById('toCurrency').value;
+        let result;
 
-    if (from === 'VND' && to === 'USD') {
-        result = "Result:" + (amount / 25000 + " " + 'VND');
-    }
-    else if (from === 'USD' && to === 'VND') {
-        result = "Result:" + (amount * 25000 +" " + 'USD');
-    }
-    else if (from === 'VND') {
-        result = "Result:" + amount;
-    }
-    else {
-        result = "Result:" + amount;
-    }
-    document.getElementById('result').innerHTML = result;
+        if (from === 'VND' && to === 'USD') {
+            result = "Result:" + (amount / 25000).toFixed(2) + " USD";
+        }
+        else if (from === 'USD' && to === 'VND') {
+            result = "Result:" + (amount * 25000).toFixed(2) + " VND";
+        }
+        else if (from === 'VND') {
+            result = "Result:" + parseFloat(amount).toFixed(2) + " VND";
+        }
+        else {
+            result = "Result:" + parseFloat(amount).toFixed(2) + " USD";
+        }
 
-}
+        document.getElementById('result').innerHTML = result;
+    }
 </script>
 </body>
-
 </html>
