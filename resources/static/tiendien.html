@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="dien" name="hoa" value="">
+<button onclick="result()"> = </button>
+<p id="toTal"></p>
+
+
+
+<script>
+  function result() {
+    let n = +document.getElementById('dien').value;
+    
+    if (n > 0) {
+      if (n < 50) {
+        let money = n * 2000
+        document.getElementById('toTal').innerHTML = "Tien dien n * 2000 =" + money
+      }
+      else if (n < 150) {
+        let money = n * 3000
+        document.getElementById('toTal').innerHTML = "Tien dien n * 3000 =" + money
+      }
+      else if (n < 250 ) {
+        let money = n * 3500
+        document.getElementById('toTal').innerHTML = "Tien dien n * 3500 =" + money
+      }
+      else {
+        let money = n * 4000
+        document.getElementById('toTal').innerHTML = "Tien dien n * 4000 ="  + "VND"
+      }
+    }
+    else {
+      document.getElementById('toTal').innerHTML = "So luong lon hon 0";
+    }
+  }
+
+</script>
+</body>
+</html>

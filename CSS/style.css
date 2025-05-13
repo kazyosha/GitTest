@@ -114,5 +114,62 @@ table.custom-table tr:hover {
     background: red; /* giả định bạn muốn hiệu ứng hover */
 }
 
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f2f2;
+ }
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto; /* Căn giữa khối theo chiều ngang */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+label input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.login {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #357ae8;
+}
+
+#ketQua {
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+
 
 

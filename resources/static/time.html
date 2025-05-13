@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<script>
+<!--  Sử dụng đối tượng Date để lấy ngày giờ hiện tại của hệ thống (tức là ngày giờ của máy tính đang chạy đoạn mã này).-->
+  var curDate = new Date();
+
+  // Lấy giờ hiện tại
+  // getHours() là một phương thức của đối tượng Date, trả về giờ hiện tại (từ 0 đến 23).
+  var time = curDate.getHours();
+  if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  alert(greeting);
+</script>
+</body>
+</html>
