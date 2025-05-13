@@ -65,3 +65,35 @@ function login() {
   }
 
 }
+function traiCay() {
+    let browser = document.getElementById("select").value;
+    switch (browser) {
+        case 'trung':
+        case  'ga':
+            alert("La Dong Vat")
+            break;
+        case 'bap':
+        case 'cuCai':
+        case 'caRot':
+        case 'rau':
+            alert('Thuc Vat')
+            break;
+    }
+}
+function numSimple(){
+    let number = document.getElementById("numBer").value;
+    switch (number) {
+        case '1':
+            document.getElementById('ketQua').innerHTML = "Số bạn chọn là 1"
+            break;
+        case '2':
+            document.getElementById('ketQua').innerHTML = "Số bạn chọn là 2";
+            break;
+        case '3':
+            document.getElementById('ketQua').innerHTML = "Số bạn chọn là 3";
+            break;
+
+        default:
+            document.getElementById('ketQua').innerHTML = number + " " + "là số bạn chọn"
+    }
+}
