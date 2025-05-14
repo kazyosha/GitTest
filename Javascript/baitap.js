@@ -22,13 +22,13 @@ function bai2(){
        result = "Du tuoi"
    }
    else {
-       result = "CHua du tuoi"
+       result = "Chua du tuoi"
    }
     document.getElementById("ketQua").innerHTML = result;
 }
 function bai3(){
     let a = parseInt(document.getElementById("numA").value);
-    let result
+    let result;
     if (a === 0) {
         result = "Bang 0"
     }
@@ -86,5 +86,77 @@ function bai5(){
     }
     document.getElementById("ketQua").innerHTML = result;
 }
+// function bai5(){
+//     let a = parseFloat(document.getElementById("exam").value);
+//     let b = parseFloat(document.getElementById("giuaKy").value);
+//     let c = parseFloat(document.getElementById("cuoiKy").value);
+//     let total = (a + b * 2 + c * 3) / 6
+//     let result = "";
+//
+//     if (total >= 8.0) {
+//         result = "aaaa"
+//     }
+//     else if (total >= 6.5) {
+//         result = "bbb"
+//     }
+//     else if (total >= 5.0) {
+//         result = "ccc"
+//     }
+//     else {
+//         result = "ddd"
+//     }
+//     document.getElementById("ketQua").innerHTML =total + result;
+// }
+function bai6(){
+    let doanhSo = +document.getElementById("doanhSo").value;
+    let result = "";
+
+    if (isNaN(doanhSo)) {
+        result = "Vui long nhap doanh so ( so duong )"
+    }
+    else{
+        let hoahong = "";
+        if (doanhSo >= 15000000) {
+           hoahong = doanhSo * 0.10
+        }
+        else if (hoahong >= 10000000) {
+            hoahong = doanhSo * 0.08
+        }
+        else if (hoahong >= 8000000) {
+            hoahong = doanhSo * 0.06
+        }
+        else {
+            hoahong = doanhSo * 0.04
+        }
+
+        result = `Doanh số: ${doanhSo.toLocaleString()} VNĐ<br>Hoa hồng nhận được: ${hoahong.toLocaleString()} VNĐ`
+    }
+    document.getElementById("ketQua").innerHTML = result;
+}
+    function bai7(){
+        let pNoiM = document.getElementById("phoneNoiMang").value;
+        let pNgoaiM = document.getElementById("phoneNgoaiMang").value;
+        const phiThueBao = 25000;
+        let total = "";
+
+        if (pNoiM === "" || pNgoaiM === "" ) {
+            total = "Vui Long Khong De Trong Thong Tin Bat Buoc"
+        }
+        else if (pNoiM < 0 || pNgoaiM < 0 ) {
+            total = "Phai lon hon 0"
+        }
+        else {
+            let cuocNoiMang = pNoiM * 850;
+            let cuocNgoaiMang = pNgoaiM * 1100;
+            let tongCuoc = phiThueBao + cuocNoiMang + cuocNgoaiMang;
+
+            total = `Cước thuê bao: ${phiThueBao.toLocaleString()} VNĐ<br>` +
+                `Cước nội mạng: ${cuocNoiMang.toLocaleString()} VNĐ<br>` +
+                `Cước ngoại mạng: ${cuocNgoaiMang.toLocaleString()} VNĐ<br>` +
+                `<strong>Tổng cộng: ${tongCuoc.toLocaleString()} VNĐ</strong>`;
+        }
+        document.getElementById("ketQua").innerHTML = total;
+    }
+
 
 
