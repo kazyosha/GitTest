@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Viết chương trình nhập vào một số bất kỳ lớn hơn 0. Tính tổng các phần tử từ 1 đến số vừa nhập vào. </title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body>
+<h1> Tính tổng số nguyên từ 1 đến số bất kỳ nhập vào</h1>
+<input type="number" id="numA" value="" min="1" placeholder="Nhập một số ngẫu nhiên"> <br>
+<button onclick="baitap2()">Ket qua</button>
+<p id="ketQua"></p>
+<script>
+    function baitap2() {
+        let num = document.getElementById("numA").value;
+        let total = 0;
+        let i = 1;
+        for (; i <= num; i++) {
+            total = total + i;
+        }
+        document.getElementById("ketQua").innerHTML = "Tong tu 1 den " + num + " "+ "la: " + total;
+    }
+</script>
+</body>
+</html>
