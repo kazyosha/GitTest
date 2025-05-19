@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>20 số đầu tiên trong dãy Fibonacci:</h3>
+<p id="fiBo"></p>
+
+<script>
+    let a = 0, b = 1;
+    let result = a + ", " + b;
+
+    for (let i = 2; i < 20; i++) {
+        let next = a + b;
+        result += ", " + next;
+        a = b;
+        b = next;
+    }
+
+    document.getElementById("fiBo").innerHTML = result;
+</script>
+
+</body>
+</html>

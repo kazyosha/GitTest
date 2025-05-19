@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let a = ['19', '0', '3', '4', '7', '444']; //Trống 6,7 // 8 = 10
+    a[8] = 10 // cập nhật giá trị trong mảng
+
+    //Sắp xếp mảng
+    // a.sort((a,b) => b - a );
+
+    //Them vao cuoi mang push
+    a.push("1")
+    //Them vao dau mang unshift
+    a.unshift("Long")
+    console.log(a);
+
+
+    //Xoa phan tu trong mang splice
+    a.splice(1,2);
+
+
+    //for-in  duyệt qua mảng và trả về chỉ số phần tử
+    // for (let index in a ){
+    //     document.write(index)
+    // }
+
+
+    // //for-of duyệt qua mảng và trả về giá trị của phân tử
+    // for (let fonIn of a){
+    //     document.write(a);
+    // }
+
+
+    // for-each duyệt qua phần tử mảng cả index và value
+    a.forEach((value, index) => {
+        document.write("Index: " + index + " - Value: " + value + "<br/>");
+    });
+
+</script>
+</body>
+</html>
