@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+
+
+<script>
+    let numbers = [-3, 5, 1, 3, 2, 10]; // Tạo mảng
+    let max = numbers[0]; // Gán giá trị đầu -3 là max
+    let index = 0; // bắt đầu bằng 0
+    for (let i = 1; i < numbers.length; i++) { //i = 1 có nghĩa là i = 5
+        if (numbers[i] > max) { // Nếu 5 > -3 thì max là 5
+            max = numbers[i]; // gán max = 5 ----- xong tăng i lên 1 chỉ số có nghĩa i có giá trị = 1 rồi ss tiếp 5 với 1
+            index = i; // chỉ số của i bằng với max
+        }
+    }
+    alert("max: " + max + " at position " + index); // in ra nếu max là 10 thì index bằng 5
+</script>
+</body>
+</html>
