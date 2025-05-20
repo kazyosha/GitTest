@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iết chương trình khởi tạo hoặc nhập vào hai mảng số nguyên gồm 10 phần tử (gọi là mảng a và b).</title>
+</head>
+<body>
+
+<script>
+  let a = prompt("Nhap bang thu nhat (ngan cach nhau boi dau phay)")
+  let chuyenDoiA = a.split(",").map(Number);
+  let b = prompt("Nhap bang thu hai (ngan cach nhau boi dau phay)")
+  let chuyenDoiB = b.split(",").map(Number);
+
+  let c = chuyenDoiA.concat(chuyenDoiB);
+  document.write("Mang sau khi duoc noi la " + c)
+</script>
+</body>
+</html>

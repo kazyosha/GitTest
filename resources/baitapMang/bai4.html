@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo một mảng số nguyên gồm 10 phần tử. Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.</title>
+</head>
+<body>
+
+
+
+<script>
+    let arr = [11, 1, 5, 18, 77, 37, 4, 8, 2, 9, 133, 12, 6, 51, 3];
+    let total = 0;
+    let value = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+            total++;
+            value +=" " + arr[i];
+        }
+    }
+    document.write("Có " + total + " phần tử lớn hơn hoặc bằng 10 là: " + value);
+
+</script>
+</body>
+</html>

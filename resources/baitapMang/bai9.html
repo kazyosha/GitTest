@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo hoặc nhập vào một mảng số nguyên gồm 10 phần tử. Nhập hoặc tạo một phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng không.</title>
+</head>
+<body>
+<script>
+  let arr = [1,2,3,4,5,6,7,9,10];
+  let add = +prompt("Nhap 1 so de so sanh du lieu trong mang")
+  let found = false;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === add) {
+      found = true;
+      break;
+    }
+  }
+  if (found === true) {
+    document.write("Du lieu khop voi database")
+  } else {
+    document.write("Du lieu khong khop voi database")
+  }
+
+</script>
+</body>
+</html>

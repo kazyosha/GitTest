@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [4, 12, 7, 10, 25, 3, 18, 1, 11, 6];
+  arr.push(44);
+  let max = arr[0];
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max){
+      max = arr[i];
+    }
+     sum += arr[i];
+  }
+  let avg = sum / arr.length;
+  document.write("Gia tri lon nhat la " + max + " Tong trung binh cac so trong mang la " + avg);
+</script>
+</body>
+</html>

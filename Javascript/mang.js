@@ -21,14 +21,14 @@ function chuyenDoi() {
     let output ="";
 
     for(let i = 0; i < input.length; i++) {
-        let chuyenDoi = input[i];
-        if (chuyenDoi >= 'a' && chuyenDoi <= 'z') {
-            output += chuyenDoi.toUpperCase();
-        } else if (chuyenDoi >= 'A' && chuyenDoi <= 'z') {
-            output += chuyenDoi.toLowerCase();
+        let chuyen = input[i];
+        if (chuyen >= 'a' && chuyen <= 'z') { // Unicode của chữ cái thường là 97 đến 122
+            output += chuyen.toUpperCase();
+        } else if (chuyen >= 'A' && chuyen <= 'z') { //Unicode của chữ cái in hoa là 65 đến 90
+            output += chuyen.toLowerCase();
         }
         else {
-            output += chuyenDoi;
+            output += chuyen;
         }
 
     }
