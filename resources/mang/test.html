@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let city = ["Hn","KG", "CM", "CT", "KG", "NS", "Hn", "CM", "KG", "CM", "KG", "CM"]
+    let indexes  = [];
+    let array = [];
+    let positionX = [];
+    for(let i = 0; i < city.length; i++) {
+        if(city[i] === "Hn") {
+            indexes .push(i);
+        }
+        if(city[i] === "CM") {
+            array.push(i);
+        }
+        if(city[i] === "KG") {
+            positionX.push(i);
+        }
+
+    }
+    console.log("Ket qua: Hn có " + indexes .length + " Phan tu");
+    console.log("Chỉ số của các phần tử 'Hn': " + indexes .join(", "));
+
+    console.log("Ket qua: CM có " + array .length + " Phan tu");
+    console.log("Chỉ số của các phần tử 'CM': " + array .join(", "));
+
+    console.log("Ket qua: KG có " + positionX .length + " Phan tu");
+    console.log("Chỉ số của các phần tử 'KG': " + positionX .join(", "));
+</script>
+</body>
+</html>

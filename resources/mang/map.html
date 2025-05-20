@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>duyệt qua từng phần tử của mảng và tạo ra một mảng mới với các giá trị đã được xử lý thông qua một hàm (callback).</title>
+</head>
+<body>
+
+<script>
+  let arr = []
+  let student1 = {
+    id: 1,
+    name: "pham chi tam",
+    age: 21,
+    address: "63 nguyen van giap"
+  }
+  let student2 = {
+    id: 2,
+    name: "nguyen xuan truong",
+    age: 25,
+    address: "xxxx"
+  }
+  let student3 = {
+    id: 3,
+    name: "pham thanh duong",
+    age: 21,
+    address: "xxx nguyen van giap"
+  }
+  let student4 = {
+    id: 4,
+    name: "le cong ly",
+    age: 21,
+    address: "xxxxaaaa"
+  }
+  arr.push(student1, student2, student3,student4);
+
+  let map = arr.map((s, index) => ({ // tao mot mang moi tu mang cu
+    STT: index + 1,
+    Name: s.id === 4 ? "Le Cong Ly Updated" : s.name // Toan tu 3 ngoi. Neu tim thay id = 4 thi Name se mang gia tri cua True. Neu ko tim thay thi se de gia tri cua name
+  }));
+  console.log(map);
+
+</script>
+</body>
+</html>
