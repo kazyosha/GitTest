@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi nhiet do</title>
+  <script src="../../../Javascript/javaHam/chuyenDoiNhietDoAndMin.js"></script>
+</head>
+<body>
+<label>Fahrenheit: </label>
+<input type="number" id="inPutC" placeholder="Nhap nhiet do muon chuyen do"
+       oninput="temperatureConverter(this.value)"
+       onchange="temperatureConverter(this.value)">
+
+<!-- oniput - Xử lí su kien ngay khi người dùng nhập vào-->
+<!-- onchange - Xử lí dữ liệu ngay khi người dùng thay đổi giấ trị trong ô hoặc rời khỏi ô nhập dữ liệu-->
+
+<p>Celsius: <p id="ketQua"></p></p>
+
+
+</body>
+</html>

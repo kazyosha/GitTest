@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra so nguyen to</title>
+</head>
+<body>
+<script>
+    function isPrime(number){
+        if (number < 10000) {
+            if (number === 2) {
+                alert( number + " La mot so nguyen to")
+            }
+            if (number % 2 === 0){
+                alert(numbers + " Khong phai la so nguyen to");
+            }
+            if (number < 2) {
+                alert(numbers + " Khong phai la so nguyen to");
+            }
+        }
+        else{
+            alert("Not a valid number!");
+        }
+                return true;
+    }
+    let input = prompt("Nhập một số nguyên dương để kiểm tra:");
+    let numbers = parseInt(input);
+
+    if (isPrime(numbers)) {
+        alert(numbers + " La 1 so nguyen to");
+    }
+
+</script>
+</body>
+</html>

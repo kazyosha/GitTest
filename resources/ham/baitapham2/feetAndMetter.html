@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi </title>
+</head>
+<body>
+
+
+<script>
+  function footToMeter(foot){
+    return 3.279 * foot
+  }
+
+  function meterToFoot(meter){
+    return 0.305 * meter
+  }
+
+  let F = +prompt("Nhap 1 so bat ky")
+  let M = +prompt("Nhap 1 so bat ky")
+  let feet = footToMeter(F)
+  let metter = meterToFoot(M)
+
+  document.write(F + " feet = " + metter +" meter" + "</br>")
+  document.write(M + " meter = " + feet +" foot")
+</script>
+</body>
+</html>

@@ -10,13 +10,14 @@
 <script>
    let arr = [-31 , 1, 5, 3, -51, -2, 5, -9, 8, 10, -1, 5, -7];
    let count = 0;
-
+   let value = [];
    for (let i = 0; i < arr.length; i++) {
      if (arr[i] < 0) {
        count++;
+       value += ", " + arr[i];
      }
    }
-   document.write("Tong so nguyen am trong mang la " + count);
+   document.write("Tong so nguyen am trong mang la " + count + " , cac so do la " + value);
 
 </script>
 </body>

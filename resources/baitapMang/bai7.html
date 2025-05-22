@@ -19,11 +19,25 @@
 
   //Mang duoc nhap tu nguoi dung
 
-  let input = prompt("Nhap 1 mang so ngan cach nhau boi dau phay") // nhập 1 mảng bất kỳ
-  let chuyenDoi = input.split(",").map(Number); //chuyển đổi kiểu dữ liệu từ chuỗi thành mảng bằng split và ép thành số nguyên
-  chuyenDoi.reverse(); // đảo ngược giá trị của biến chuyenDoi
-  document.write("Mang ban dau la: " + input + "</br>")
-  document.write("Mang sau khi dao nguoc la: "+ chuyenDoi)
+  // let input = prompt("Nhap 1 mang so ngan cach nhau boi dau phay") // nhập 1 mảng bất kỳ
+  // let chuyenDoi = input.split(",").map(Number); //chuyển đổi kiểu dữ liệu từ chuỗi thành mảng bằng split và ép thành số nguyên
+  // chuyenDoi.reverse(); // đảo ngược giá trị của biến chuyenDoi
+  // document.write("Mang ban dau la: " + input + "</br>")
+  // document.write("Mang sau khi dao nguoc la: "+ chuyenDoi)
+
+
+  let input = prompt("Nhập mảng (các số cách nhau bằng dấu phẩy):");
+  let arr = input.split(",").map(Number); // chuyển đổi kiểu dữ liệu string thành mảng
+  let n = arr.length;
+
+  for (let i = 0; i < n/2; i++) { // n/2 là để chỉ cần duyệt đến 1 nửa mảng
+      let temp = arr[i];
+      arr[i] = arr[n - i - 1]; // gán arr[0] = arr[4] Ex n = 5
+      arr[n - i - 1] = temp; // gán a[4] = temp = arr[0]
+  }
+
+  document.write("Mảng sau khi đảo ngược: " + arr);
+
 </script>
 </body>
 </html>
